@@ -11,7 +11,7 @@ def bubbleSort(arr):
     n = len(arr)
     for i in range(n-1):
         ordenado = True
-        for j in range(n-i): #Para evitar comparaciones innecesarias, se resta el length con el contador i.
+        for j in range(n-1): #Para evitar comparaciones innecesarias, se resta el length con el contador i.
             if(arr[j] > arr[j + 1]):
                 ordenado = False
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
